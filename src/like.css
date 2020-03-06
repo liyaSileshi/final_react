@@ -1,0 +1,11 @@
+.count{
+    display: flex;
+    margin-left: 1em;
+    justify-content: space-evenly;
+}
+
+.count button{
+    padding: 0.5em;
+    font-size: 2em;
+}
+

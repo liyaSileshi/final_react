@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import './like.css'
+
 class Clicker extends Component {
   constructor(props) {
     super(props)
@@ -16,17 +18,14 @@ class Clicker extends Component {
   
   render() {
     return (
-      <div>
-        <button onClick={(e) => {
-          this.increment()
-        }}> 👍🏽</button>
-
-        <h1>{this.state.count}</h1>
-
+      <div className='count'>
         <button onClick={(e) => {
           this.decrement()
         }}> 👎🏽</button>
-
+        <h1>{this.state.count}</h1>
+        <button onClick={(e) => {
+          this.increment()
+        }}> 👍🏽</button>
       </div>
     )
   }
